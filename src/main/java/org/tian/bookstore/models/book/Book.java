@@ -28,9 +28,6 @@ public class Book {
 	@Column(nullable = false, length=100, unique=true)
 	private String bookTitle;
 	
-	@Column(nullable=false, length=100)
-	private String author;
-	
 	@OneToMany(mappedBy = "books")
     List<FavoriteRating> ratings;
 	
@@ -52,9 +49,8 @@ public class Book {
 	
 	public Book() {}
 
-	public Book(String bookTitle, String author) {
+	public Book(String bookTitle) {
 		this.bookTitle = bookTitle;
-		this.author = author;
 	}
 
 	public Long getId() {

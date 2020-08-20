@@ -17,6 +17,7 @@ public class Author {
 	@Column(name="authorId")
 	private long id;
 	
+	@Column(unique=true)
 	private String authorName;
 	
 	@ManyToMany(mappedBy = "authors")

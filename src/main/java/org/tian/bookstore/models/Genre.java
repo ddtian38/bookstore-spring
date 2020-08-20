@@ -21,6 +21,7 @@ public class Genre {
 	@Column(name="genreId")
 	private long id;
 	
+	@Column(unique=true)
 	private String genreName;
 	
 	@ManyToMany(mappedBy = "genres")

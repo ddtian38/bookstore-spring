@@ -5,4 +5,5 @@ import org.tian.bookstore.models.book.Book;
 
 public interface BookRepository extends CrudRepository<Book, Long>{
 
+	public Book findBybookTitle(String bookTitle);
 }

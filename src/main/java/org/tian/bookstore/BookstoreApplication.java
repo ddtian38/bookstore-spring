@@ -36,7 +36,7 @@ public class BookstoreApplication {
 			User ua = accountRepository.save(new User("John", "john@m.com"));
 			Genre g1 = gr.save(new Genre("Technology"));
 			Author a1 = ar.save(new Author("Bob"));
-			Book book1 = new Book("Thinking in Java", "Java");
+			Book book1 = new Book("Thinking in Java");
 			List<Author> authorList = new ArrayList();
 			authorList.add(a1);
 			book1.setAuthor(authorList);
